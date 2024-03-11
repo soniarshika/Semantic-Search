@@ -12,5 +12,6 @@ RUN pip install --upgrade pip
 
 RUN pip install fastapi && pip install qdrant-client && pip install sentence-transformers && pip install langchain && pip install langchain-community
 
+
 RUN python3 /app/data_loader.py 
 ENTRYPOINT python3 /app/main.py

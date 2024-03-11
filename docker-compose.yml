@@ -23,6 +23,8 @@ services:
       - "8000:8000"
     networks: 
      - network-backend
+    depends_on:
+     - qdrant_server
 
 networks:
   network-backend:
