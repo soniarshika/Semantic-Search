@@ -91,7 +91,7 @@ logger.info(f"Initializing HuggingFace Embeddings with model: {EMBEDDINGS_MODEL_
 embeddings = HuggingFaceEmbeddings(model_name=EMBEDDINGS_MODEL_NAME)
 
 # Connecting to the Quadrant
-url = "http://localhost:6333"
+url = "http://0.0.0.0:6333"
 logger.info(f"Connecting to Qdrant at URL: {url}")
 qdrant = Qdrant.from_documents(
     all_docs,

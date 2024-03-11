@@ -7,7 +7,7 @@ class SemanticSearcher:
     def __init__(self, collection_name):
         self.collection_name = collection_name
         self.model = SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
-        self.qdrant_client = QdrantClient("http://localhost:6333")
+        self.qdrant_client = QdrantClient("http://0.0.0.0:6333")
 
 
     def search(self, text: str):

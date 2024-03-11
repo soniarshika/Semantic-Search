@@ -85,7 +85,7 @@ and in new terminal start frontend server using streamlt UI:
 The  input of this module the query from the user. Now to send request to the server you can use:
 
 ```
-curl -X GET "http://localhost:8000/api/search" -G --data-urlencode "query=What is the proposed solution for reducing a pipeline stall caused by a data hazard in a superscalar system, and how does it aim to improve processing speed?" -H "Accept: application/json"
+curl -X GET "http://0.0.0.0:8000/api/search" -G --data-urlencode "query=What is the proposed solution for reducing a pipeline stall caused by a data hazard in a superscalar system, and how does it aim to improve processing speed?" -H "Accept: application/json"
 ```
 
 
